@@ -12,8 +12,6 @@ public class Cuenta {
     }
 
     public boolean superaValorDeterminado(Float valorASuperar){
-        return valorDeSaldo > valorASuperar;
+            return valorDeSaldo > valorASuperar;
     }
-
-
 }
