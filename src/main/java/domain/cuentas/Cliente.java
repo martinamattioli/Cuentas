@@ -11,12 +11,14 @@ public class Cliente {
         this.nroDeDocumento = nroDeDocumento;
         this.cuentas = new ArrayList<Cuenta>();
     }
-
+    public void agregarCuenta(Cuenta cuenta){
+        this.cuentas.add(cuenta);
+    }
     public String getNroDeDocumento() {
         return nroDeDocumento;
     }
 
-    public Stream<Cuenta> cuentasQueSuperanUnValorDeSaldo(Float valorDeSaldoASuperar){
+    public Stream<Cuenta> cuentasQueSuperanUnValorDeSaldo(float valorDeSaldoASuperar){
         return this.cuentas.stream()
                 .filter(unaCuenta -> unaCuenta.superaValorDeterminado(valorDeSaldoASuperar));
     }

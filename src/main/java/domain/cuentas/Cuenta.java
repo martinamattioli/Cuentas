@@ -1,17 +1,17 @@
 package domain.cuentas;
 
 public class Cuenta {
-    private Float valorDeSaldo;
+    private float valorDeSaldo;
 
-    public void setValorDeSaldo(Float valorDeSaldo) {
+    public Cuenta(float valorDeSaldo){
         this.valorDeSaldo = valorDeSaldo;
     }
 
-    public Float getValorDeSaldo() {
+    public float getValorDeSaldo() {
         return valorDeSaldo;
     }
 
-    public boolean superaValorDeterminado(Float valorASuperar){
+    public boolean superaValorDeterminado(float valorASuperar){
             return valorDeSaldo > valorASuperar;
     }
 }
